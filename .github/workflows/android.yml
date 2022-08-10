@@ -1,0 +1,51 @@
+name: Android
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: '11'
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+      - run: flutter pub get
+      - run: flutter test
+      - run: flutter build apk
+      - run: flutter build appbundle
+
+      - name: 'Upload APK'
+        uses: actions/upload-artifact@v2
+        with:
+          name: android.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+
+      - name: 'Upload Bundle'
+        uses: actions/upload-artifact@v2
+        with:
+          name: android.aab
+          path: build/app/outputs/bundle/release/app-release.aab
+
+  release:
+    name: Release
+    runs-on: macos-latest
+    steps:
+      - name: Release
+        uses: fnkr/github-action-ghr@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GHR_PATH: '.'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
