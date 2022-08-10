@@ -1,16 +1,15 @@
 # lover
 
-A new Flutter project.
+This is a project builing for you boy/girl friend.
 
-## Getting Started
+It will be an ios/android app, also work on macos/windows/linux.
 
-This project is a starting point for a Flutter application.
+It is written using flutter, which support multi platform.
 
-A few resources to get you started if this is your first Flutter project:
+I'd like to ask for eveyone's requirements.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+If you are a developer for flutter or go, and also have a girdfriend/boyfriend. If you want to have an special app for you two, welcome to this new app's development!
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+No PRD, no UI design, all by yourself~
+
+Send email to me and join the team!
