@@ -58,9 +58,6 @@ class _IndexPageState extends State<IndexPage> {
       ),
       tabBuilder: (context, index) => CupertinoTabView(
         builder: (context) => CupertinoPageScaffold(
-          // navigationBar: CupertinoNavigationBar(
-          //   middle: _widgetOptions.elementAt(index),
-          // ),
           child: SafeArea(child: _widgetOptions.elementAt(index)),
         ),
       ),
