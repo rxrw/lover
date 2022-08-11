@@ -1,6 +1,48 @@
 {
-  "helloWorld": "Hello World!",
-  "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
-  }
+  "appName": "Rain of U",
+
+  "home": "Home",
+  "log": "Log",
+  "my": "My",
+
+  "my_account": "My Account",
+  "settings": "Settings",
+  "signIn": "Sign In",
+  "signUp": "Sign Up",
+  "signOut": "Sign Out",
+  "success": "Success",
+  "failure": "Failure",
+  "error": "Error",
+  "warning": "Warning",
+  "info": "Info",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "close": "Close",
+  "create": "Create",
+  "delete": "Delete",
+  "edit": "Edit",
+  "save": "Save",
+  "update": "Update",
+  "search": "Search",
+  "view": "View",
+  "viewAll": "View All",
+  "viewDetails": "View Details",
+  "viewMore": "View More",
+  "viewLess": "View Less",
+  "years": "Years",
+  "months": "months",
+  "days": "days",
+  "hours": "hours",
+  "minutes": "minutes",
+  "seconds": "seconds",
+  "ago": "ago",
+  "justNow": "just now",
+  "loading": "Loading",
+  "retry": "Retry",
+  "noInternet": "No Internet",
+  "noInternetConnection": "No Internet Connection",
+
+  "weHaveBeenTogetherDays": "We have been together for %d days",
+  "noInternetConnectionMessage": "Please check your internet connection and try again."
+
 }

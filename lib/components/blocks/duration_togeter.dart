@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:lover/constants/word.dart';
 import 'package:sprintf/sprintf.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class DurationTogether extends StatelessWidget {
   final int days;
@@ -11,7 +11,8 @@ class DurationTogether extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       child: Center(
-        child: Text(sprintf(ConstantWord.howLongWeBeTogether, [days])),
+        child: Text(sprintf(
+            AppLocalizations.of(context)!.weHaveBeenTogetherDays, [days])),
       ),
     );
   }

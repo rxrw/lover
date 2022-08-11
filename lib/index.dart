@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:lover/constants/name.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:lover/constants/size.dart';
 import 'package:lover/pages/home.dart';
 import 'package:lover/pages/log.dart';
@@ -29,27 +29,27 @@ class _IndexPageState extends State<IndexPage> {
   Widget build(BuildContext context) {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(
+            icon: const Icon(
               CupertinoIcons.home,
               size: ConstantSize.cupertinoIconSize,
             ),
-            label: ConstantName.home,
+            label: AppLocalizations.of(context)!.home,
           ),
           BottomNavigationBarItem(
-            icon: Icon(
+            icon: const Icon(
               CupertinoIcons.square_list,
               size: ConstantSize.cupertinoIconSize,
             ),
-            label: ConstantName.log,
+            label: AppLocalizations.of(context)!.log,
           ),
           BottomNavigationBarItem(
-            icon: Icon(
+            icon: const Icon(
               CupertinoIcons.person_2,
               size: ConstantSize.cupertinoIconSize,
             ),
-            label: ConstantName.my,
+            label: AppLocalizations.of(context)!.my,
           ),
         ],
         currentIndex: _selectedIndex,

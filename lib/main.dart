@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:lover/constants/name.dart';
 import 'package:lover/index.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -13,14 +12,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const CupertinoApp(
-      title: ConstantName.appName,
-      theme: CupertinoThemeData(
+    return CupertinoApp(
+      title: AppLocalizations.of(context)!.appName,
+      theme: const CupertinoThemeData(
         primaryColor: CupertinoColors.systemGreen,
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: IndexPage(),
+      home: const IndexPage(),
     );
   }
 }

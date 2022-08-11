@@ -1,6 +1,9 @@
 {
-  "helloWorld": "Hello World!",
+  "helloWorld": "你好世界",
   "@helloWorld": {
-    "description": "The conventional newborn programmer greeting"
-  }
+    "description": "简便的新入门的打招呼的方式"
+  },
+  "home": "首页",
+  "log": "日志",
+  "my": "我的"
 }

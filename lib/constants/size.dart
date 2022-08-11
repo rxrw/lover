@@ -1,3 +1,3 @@
 class ConstantSize {
-  static const double cupertinoIconSize = 24;
+  static const cupertinoIconSize = 24.0;
 }

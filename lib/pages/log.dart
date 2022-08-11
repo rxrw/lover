@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class Log extends StatelessWidget {
   const Log({Key? key}) : super(key: key);
@@ -6,7 +7,7 @@ class Log extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       child: Center(
-        child: Text('Log'),
+        child: Text(AppLocalizations.of(context)!.cancel),
       ),
     );
   }
