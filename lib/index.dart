@@ -1,9 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:lover/constants/size.dart';
+import 'package:lover/constants/sp.dart';
 import 'package:lover/pages/home.dart';
 import 'package:lover/pages/log.dart';
 import 'package:lover/pages/my.dart';
+import 'package:sp_util/sp_util.dart';
 
 class IndexPage extends StatefulWidget {
   const IndexPage({Key? key}) : super(key: key);
@@ -58,7 +60,7 @@ class _IndexPageState extends State<IndexPage> {
       ),
       tabBuilder: (context, index) => CupertinoTabView(
         builder: (context) => CupertinoPageScaffold(
-          child: SafeArea(child: _widgetOptions.elementAt(index)),
+          child: _widgetOptions.elementAt(index),
         ),
       ),
     );
